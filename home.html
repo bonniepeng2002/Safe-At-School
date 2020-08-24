@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Question 7</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+      function message()
+      {
+      	document.getElementById("alert").style.display="block";
+      }
+
+      function success()
+      {
+        document.getElementById("success").style.display="block";
+        setTimeout(function(){
+          window.location.replace("end.html");
+        }, 2000);
+      }
+    </script>
+  </head>
+  <body>
+    
+    <img src="background/home.jpg" id="bg" alt="">
+
+    <audio autoplay id="audio">
+      <source src="audio/home.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="home">
+
+      <p class ="instructions" id ="snack"> After a long day of school, it's time to unwind at home! Your tummy's rumbling, <br> and you're craving a snack. What will you do first?</p>
+
+      <button id="button" onclick="success()" class ="soap">WASH YOUR HANDS WITH SOAP</button>
+
+      <a href="coloring.html">
+        <button id="button" class ="back">BACK</button>
+      </a> 
+
+      <button id="button" class ="food" onclick="message()">GRAB SOME FOOD</button>
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert" style="display: none">
+        <strong>Whoa!</strong> Not with those dirty paws! You can carry home germs from your hands so washing your hands is a must. 
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="alert alert-success" role="alert" id="success" style="display: none">
+        Spot on! It never hurts to make sure you're free of germs, especially when you come home.
+      </div>
+
+    </div>
+    
+  </body>
+</html>

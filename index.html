@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Title Page</title>
+    <title>Safe at School</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="index_script.js"></script>
+  </head>
+
+  <body>
+    
+    <img src="background/homepage.jpg" id="bg" alt=""> 
+    <div id="homepage">
+      
+      <h1 id="header"> 
+        Safe At School!
+      </h1>
+      
+      <p id="des" style= "text-align: center; padding:15px" class = "instructions">
+        Welcome to your first day back to school! <br>With COVID-19 still at large, we need to keep both ourselves and others safe. <br>Are you ready to start your school day? <br>Let's start off simple: 
+      </p>
+
+      <form id="nameform" action="#" onsubmit="greet(); return false;">
+        <label for="username">What is your name?</label><br> 
+        <input type="text" id="username" required>
+        <input type="submit" value="OK">
+      </form>
+
+      <a href="table.html">
+      <button id="button" class="starting" style="visibility: hidden"> START </button>
+      </a>
+      
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Question 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="table_script.js"></script>
+  </head>
+  <body>
+    
+    <img src="background/table.jpg" id="bg" alt=" ">
+
+    <audio autoplay id="audio">
+      <source src="audio/table.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="table">
+
+      <p class = "instructions" id = "packbag" > It’s time to pack your school bag! In addition to your mask, what should you bring? <br>
+        Check off the items that you will bring.
+      </p>
+
+      <a href="index.html">
+          <button id="button" onclick="pop_up()" class ="back">BACK</button>
+        </a>
+
+      <div id = "selectbag"> 
+
+        <input type="checkbox" name="item" value="calculator">
+        <label for="calculator">Calculator</label><br>
+
+        <input type="checkbox" name="item" value="toothbrush">
+        <label for="toothbrush">Toothbrush</label><br>
+
+        <input type="checkbox" name="item" value="pcase">
+        <label for="pcase">Pencil Case</label><br>
+
+        <input type="checkbox" name="item" value="whisk">
+        <label for="whisk">Electric Whisk</label><br>
+
+        <input type="checkbox" name="item" value="sandwich">
+        <label for="sandwich">Sandwich</label><br>
+
+        <input type="checkbox" name="item" value="fish">
+        <label for="fish">Goldfish</label><br>
+
+        <input type="checkbox" name="item" value="notebook">
+        <label for="notebook">Notebook</label><br>
+
+        <input type="checkbox" name="item" value="hsan">
+        <label for="hsan">Hand Sanitizer</label><br>
+
+        <button id="button" onclick="submit()" > PACK YOUR BAG! </button>
+        
+      </div>
+      
+      <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert1" style="display: none">
+        You can actually leave some of these at home, <strong>Try Again!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert2" style="display: none">
+        You're missing a few items, <strong>Try Again!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="alert alert-success" role="alert" id="success" style="display: none">
+        You're all packed up and ready to go!
+      </div>
+      
+    </div>
+    
+  </body>
+</html>

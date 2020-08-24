@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Question 5</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script>
+      function message()
+      {
+      	document.getElementById("alert").style.display="block";
+      }
+
+      function success()
+      {
+        document.getElementById("success").style.display="block";
+        setTimeout(function(){
+          window.location.replace("coloring.html");
+        }, 2000);
+      }
+    </script>
+  </head>
+  <body>
+    
+    <img src="background/lunch.jpg" id="bg" alt="">
+
+    <audio autoplay id="audio">
+      <source src="audio/lunch.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="lunch">
+
+      <p class ="instructions" id ="sharing"> Great job! You wash your hands and sing along to Happy Birthday while you do it. <br>You walk back to your desk and open your lunch. It’s a sandwich! Your favourite! <br>Your best friend sits near you and opens their lunch. <br>They say: “You brought a sandwich? I brought pizza! Wanna trade?” <br>Are you going to trade food with your friend? </p>
+
+      <button id="button" onclick="message()" class ="sharelunch">YES! THEY'RE MY FRIEND!</button>
+
+      <button id="button" onclick="success()" class = "mylunch">NOT TODAY!</button>
+
+      <a href="handwash.html">
+        <button id="button" onclick="pop_up()" class ="back">BACK</button>
+      </a>
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert" style="display: none">
+        <strong>Try Again!</strong> Sharing food isn't the best idea right now. 
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="alert alert-success" role="alert" id="success" style="display: none">
+        Good thinking! Even though they are your best friend, sharing food also shares germs.
+      </div>
+      
+    </div>
+    
+  </body>
+</html>

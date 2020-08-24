@@ -1,0 +1,233 @@
+/*Elements*/
+body {
+	background-color: rgba(0, 0, 0);
+}
+h1 {
+  font-family: "Arial Black", Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  font-size: 40pt;
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  color: white;
+  font-size: 14pt;
+  font-family: Arial, Helvetica, sans-serif;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ffffff;  
+  border-radius: 5px;
+  background-color: #282623DD;
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: white;
+}
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #282623DD;
+  font-size: 14pt;
+  color: white;
+   border-width: 3px;
+  padding: 5px; 
+}
+/*Classes */
+.instructions {
+	text-align: center;
+	padding: 10px 10px;
+}
+.back {
+  top: 100px;
+  left: 500px;
+}
+/* Background Images */
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%;  
+  height: 100%;
+}
+/* Paragraph Display */
+#packbag {
+	position: absolute;
+	top: 20px;
+	left: 330px;
+}
+#onbus {
+  position: absolute;
+	top: 50px;
+	left: 280px;
+}
+#credits {
+  position: absolute;
+	top: 190px;
+	left: 500px;
+  padding: 40px;
+}
+#rollie {
+  position: absolute;
+	top: 30px;
+	left: 220px;
+}
+#snack {
+  position: absolute;
+	top: 20px;
+	left: 330px;
+}
+#washing {
+  position: absolute;
+	top: 20px;
+	left: 240px;
+}
+#ending {
+  position: absolute;
+	top: 30px;
+  left: 270px;
+}
+#sharing {
+  position: absolute;
+	top: 20px;
+	left: 320px;
+}
+#crayon {
+  position: absolute;
+	top: 20px;
+	left: 280px;
+}
+/* Radio Boxes */
+#selectbag {
+	width: 160px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: white;  
+	border-radius: 5px;
+	background-color: #282623DD;
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+/* Main Page */
+#header {
+  position: absolute;
+  top: 20px;
+  left: 140px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #282623DD;  
+  border-radius: 10px;
+  background-color: #282623DD;
+  padding: 10px 10px;
+}
+#des {
+position: absolute;
+	top: 170px;
+	left: 60px;
+}
+#nameform {
+  position: absolute;
+	top: 350px;
+	left: 250px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;  
+  border-radius: 10px;
+  background-color: #282623DD;
+  padding: 10px 10px;
+}
+.starting {
+position: absolute;
+	top: 440px;
+	left: 580px;
+  font-size: 30pt;
+}
+
+/*Buttons */
+#button {
+  padding: 10px 10px;
+}
+.nextclover {
+  position: absolute;
+  top: 140px;
+  left: 750px;
+}
+.emptyseat{
+  position: absolute;
+  top: 140px;
+  left: 380px;
+}
+.wavehi{
+position: absolute;
+  top: 140px;
+  left: 430px;
+}
+.hugrollie {
+position: absolute;
+  top: 140px;
+  left: 820px;
+}
+.quickrinse {
+position: absolute;
+  top: 170px;
+  left: 400px;
+}
+.birthday {
+  position: absolute;
+  top: 280px;
+  left: 410px;
+}
+.sharelunch {
+position: absolute;
+  top: 210px;
+  left: 400px;
+}
+.mylunch {
+  position: absolute;
+  top: 210px;
+  left: 750px;
+}
+.manypencils {
+position: absolute;
+  top: 130px;
+  left: 460px;
+}
+.fewpencils {
+position: absolute;
+  top: 220px;
+  left: 500px;
+}
+.soap {
+position: absolute;
+  top: 140px;
+  left: 530px;
+}
+.food {
+position: absolute;
+  top: 230px;
+  left: 590px;
+}
+.gostart{
+  position: absolute;
+  top: 500px;
+  left: 610px;
+}
+.endtostart {
+ position: absolute;
+  top: 200px;
+  left: 360px;
+}
+.gocredits{
+ position: absolute;
+  top: 300px;
+  left: 850px;
+}
+.back {
+  position: absolute;
+  top:0px;
+  left: 0px;
+}

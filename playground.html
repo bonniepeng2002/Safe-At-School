@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Question 3</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      function message()
+      {
+      	document.getElementById("alert").style.display="block";
+      }
+
+      function success()
+      {
+        document.getElementById("success").style.display="block";
+        setTimeout(function(){
+          window.location.replace("handwash.html");
+        }, 2000);
+      }
+    </script>
+  </head>
+  <body>
+
+    <img src="background/playground.jpg" id="bg" alt="">
+
+    <audio autoplay id="audio">
+      <source src="audio/playground.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="playground">
+
+      <p class ="instructions" id ="rollie">You and Clover arrive a few minutes before the bell rings. When you get off the bus, you see Rollie, another friend! <br> They see you and run towards you with a BIG grin on their face.  How do you greet Rollie?</p>
+
+      <button id="button" onclick="success()" class="wavehi">WAVE TO ROLLIE</button>
+
+      <a href="bus.html">
+        <button id="button" class ="back">BACK</button>
+      </a>
+
+      <button id="button" onclick="message()" class="hugrollie">HUG ROLLIE</button>
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert" style="display: none">
+        <strong>Uh-oh! That doesn’t sound very safe!</strong> Remember to keep physical contact to a minimum. Although everyone loves hugs, try making a secret, contactless handshake instead for some extra fun! Try again!
+      
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="alert alert-success" role="alert" id="success" style="display: none">
+        Great choice! Though hugs are nice, it’s much safer to wave to your friends!
+      </div>
+      
+    </div>
+    
+  </body>
+</html>

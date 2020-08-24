@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Question 6</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      function message()
+      {
+      	document.getElementById("alert").style.display="block";
+      }
+
+      function success()
+      {
+        document.getElementById("success").style.display="block";
+        setTimeout(function(){
+          window.location.replace("home.html");
+        }, 2000);
+      }
+    </script>
+  </head>
+  <body>
+
+    <img src="background/coloring.jpg" id="bg" alt=""> 
+
+    <audio autoplay id="audio">
+      <source src="audio/coloring.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="coloring">
+      <p class ="instructions" id ="crayon"> You’re asked to colour in a photo of a flower using the school’s sanitized pencil crayons. <br>You know that you only need 4 colours to colour the photo in. How do you choose your colours? </p>
+      
+      <button id="button" onclick="success()" class="fewpencils">PICK THE COLOURS IN YOUR HEAD FIRST</button>
+
+      <a href="lunch.html">
+        <button id="button" class ="back">BACK</button>
+      </a>
+
+      <button id="button" onclick="message()" class="manypencils">OPEN THE PENCIL CRAYON BOX AND TEST EACH COLOUR</button>
+      
+      <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert" style="display: none";">
+        <strong>Try Again!</strong> It's not a good idea to touch things that you don't need to touch.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="alert alert-success" role="alert" id="success" style="display: none">
+        Good work! It's important to limit the things you touch.
+      </div>
+                                                                                      
+    </div>
+                                                                                      
+  </body>
+</html>
