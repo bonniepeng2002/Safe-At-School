@@ -1,4 +1,4 @@
-![Safe at School Logo](https://github.com/bonniepeng2002/SafeAtSchool]/blob/master/logo.jpg?raw=true)
+![Safe at School Logo](https://github.com/bonniepeng2002/SafeAtSchool/blob/master/background/logo.jpg?raw=true)
 
 # Safe at School
 
